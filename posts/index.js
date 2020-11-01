@@ -13,7 +13,6 @@ app.get('/posts', (req, res) => {
 app.post('/posts', (req, res) => {
 	const id = randomBytes(4).toString('hex');
 	const { title } = req.body;
-
 	posts[id] = {
 		id,
 		title,
@@ -21,6 +20,6 @@ app.post('/posts', (req, res) => {
 	res.status(200).send(posts[id]);
 });
 
-app.listen(400, () => {
+app.listen(4000, () => {
 	console.log('Listening on 4000');
 });
