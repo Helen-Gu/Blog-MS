@@ -19,6 +19,7 @@ export default function PostCreate() {
 						className="form-control"
 						value={title}
 						onChange={(e) => setTitle(e.target.value)}
+						required
 					/>
 				</div>
 				<button className="btn btn-primary">Submit</button>

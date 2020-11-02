@@ -18,6 +18,7 @@ export default function CommentCreate({ postId }) {
 						className="form-control"
 						value={content}
 						onChange={(e) => setContent(e.target.value)}
+						required
 					/>
 				</div>
 				<button className="btn btn-primary">Submit</button>
